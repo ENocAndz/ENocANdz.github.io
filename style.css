@@ -11,12 +11,16 @@ body{
 }
 
 header{
+    position: fixed;
     display: flex;
     align-items:center;
     justify-content: flex-end;
-
+    width: 100%;
     height: 85px;
     padding: 5px 10px;
+}
+.hd.scrolled{
+    background-color: #000000;
 }
 header .logo{
     cursor: pointer;
@@ -41,6 +45,8 @@ nav{
 .links{
     list-style: none;
 }
+
+
 
 
 .links li{
@@ -135,7 +141,7 @@ body.active .mp .h1{
     font-size: 100px;
 }
 .enoc{
-    padding-top: 150px;
+    padding-top: 300px;
     padding-left: 200px;
     width: 50%;
 }
@@ -143,6 +149,31 @@ body.active .mp .h1{
 
 .animacion {
     position: absolute;
-    top: 86px;
+    top: 0px;
     z-index: -1;
+    margin-top: 0;
 }
+.animacion canvas{
+   
+}
+
+.bio{
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    margin-top: 23%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.bio .info{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    width: 30%;
+    text-align:left;
+    margin-left: 10%;
+}
+

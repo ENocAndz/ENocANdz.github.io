@@ -6,9 +6,11 @@ SCREEN_HEIGHT = window.innerHeight,
 
 r = 450;
 
-let mouseY = 0,
+let mouseY = 0, mouseX = 0,
 
-windowHalfY = window.innerHeight / 2,
+windowHalfY = window.innerHeight / 2, 
+
+windowHalfX =window.innerWidth /2,
 
 camera, scene, renderer;
 
@@ -28,8 +30,8 @@ camera.position.z = 1000;
 
 scene = new THREE.Scene();
 
-const parameters = [[ 0.25, 0xFFD20B, 1 ], [ 0.5, 0x7079A8, 1 ], [ 0.75, 0x9E86B6, 0.75 ], [ 1,0xD56B89 , 0.5 ], [ 1.25, 0xE2BEC1, 0.8 ]];
-
+const parameters = [[ 0.25, 0xFFD20B, 1 ], [ 0.5, 0xFA5922, 1 ], [ 0.75, 0x9E86B6, 0.75 ], [ 1,0xD56B89 , 0.5 ], [ 1.25, 0x19FAF4, 0.1 ]];
+//last one era E2BEC1
 const geometry = createGeometry();
 
 for ( let i = 0; i < parameters.length; ++ i ) {
@@ -78,7 +80,7 @@ setInterval( function () {
 
     } );
 
-}, 1000 );
+}, 100000 );
 
 }
 
@@ -129,6 +131,8 @@ function onPointerMove( event ) {
 if ( event.isPrimary === false ) return;
 
 mouseY = event.clientY - windowHalfY;
+mouseX = event.clientX - windowHalfY
+
 
 }
 
@@ -145,6 +149,7 @@ render();
 function render() {
 
 camera.position.y += ( - mouseY + 200 - camera.position.y ) * .05;
+camera.position.x +=(- mouseX + 200 - camera.position.x)*.05;
 camera.lookAt( scene.position );
 
 renderer.render( scene, camera );
