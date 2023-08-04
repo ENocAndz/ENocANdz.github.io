@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="https://kit.fontawesome.com/e2be4c989e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -16,17 +18,17 @@
         </div>
         <nav>
             <ul class="links">
-                
-                <li><a href="#"></a>Bio</li>
-                <li><a href="#"></a>Skills</li>
-                <li><a href="#"></a>Personal Projects</li>
-                <li><a href="#"></a>Contacto</li>
+
+                <li class="navLi"><a href="#"></a>Bio</li>
+                <li class="navLi"><a href="#"></a>Skills</li>
+                <li class="navLi"><a href="#"></a>Personal Projects</li>
+                <li class="navLi"><a href="#"></a>Contacto</li>
             </ul>
         </nav>
         <div class="container">
             <div class="toggle"></div>
         </div>
-        
+
 
 
     </header>
@@ -36,9 +38,9 @@
                 <h1>Hello, this is Enoc Andrade</h1>
             </div>
             <div class="animacion" id="animacion">
-                
-                <script src='https://threejs.org/build/three.js'></script>
-                
+
+
+
 
                 <script src="animation.js">
 
@@ -47,17 +49,271 @@
             </div>
         </div>
         <div class="bio">
-            <div class="info">
-                <h1>Hello, this is Enoc Andrade,
-                a CompSci Student, i have a passion for programming
-                and design, Welcome to muy portfolio. </h1>
+
+
+            <div class="info hidden">
+                <span>
+                    <h1 class="About">Bio</h1>
+                    <h2>Hello, this is Enoc Andrade,
+                        a CompSci Student, i have been learning how to code since 2020, on last year of college, i have
+                        a passion for programming
+                        and design,with this i will be giving you a tour through my skills, projects and who i am as i
+                        compsci student. Welcome to my portfolio. </h2>
+                </span>
+
             </div>
-            <div class="compAni"></div>
+
+        </div>
+
+        <div class="projects">
+            <div class="infoProjects hidden">
+                <div class="pongCard">
+                    <div class="pong">
+                        <h1>Pong Project</h1>
+                        <p>Pong Project is a project in which is a web based game of the classic game Pong, it works for
+                            1
+                            player against the computer, developed with html css and javascript</p>
+                        <p>Link a github <a href="https://github.com/ENocAndz/PongProject">Pong Project</a></p>
+                        <div class="imgs">
+                            <img src="img/htmllogo.png" alt="htmllogo" height="90px">
+                            <img src="img/csslogo.png" alt="csslogo" height="90px">
+                            <img src="img/jslogo.png" alt="jslogo" height="90px">
+                        </div>
+
+                    </div>
+                    <div class="pongimg"></div>
+                </div>
+
+                <div class="weatherCard">
+                    <div class="weather">
+                        <h1>Weather</h1>
+                        <p>WeatherApp is an app for checking the weather based on location, its done with html, css,
+                            javascript and with the help of a API for getting the weather information based on the
+                            location
+                            the user inputs.</p>
+                        <p>Link a github <a href="https://github.com/ENocAndz/WeatherApp">WeatherApp</a></p>
+                        <div class="imgs">
+                            <img src="img/htmllogo.png" alt="htmllogo" height="90px">
+                            <img src="img/csslogo.png" alt="csslogo" height="90px">
+                            <img src="img/jslogo.png" alt="jslogo" height="90px">
+                        </div>
+                    </div>
+                    <div class="weatherimg"></div>
+                </div>
+
+                <div class="gerizimCard">
+                    <div class="gerizim">
+                        <h1>Gerizim</h1>
+                        <p>Gerizim was an App developed in C# for a Company that manufactures Perfumes and lotions, its
+                            an
+                            app with several modules like inventory, sales,requests for inventory, warehouse, this
+                            projects
+                            was a project for a college course and was done with help of several collaborators tu ensure
+                            the
+                            requests from the client were fulfilled.</p>
+                        <img src="img/csharplogo.png" alt="csharplogo" height="90px">
+                    </div>
+                    <div class="gerizimimg"></div>
+
+                </div>
+
+                <div class="chatbot">
+                    <h1>Python chatbot</h1>
+                    <p>this Chatbot was made with Python, it can answer to what the user inputs, has a limited amount of
+                        answers based on me, for changing answers its just needed to change the intents file, it uses
+                        python technologies as tflearn and tensorflow. </p>
+                    <p>Link a github <a href="https://github.com/ENocAndz/Chatbot">Python Chatbot</a></p>
+                    <img src="img/pythonlogo.png" alt="pythonlogo" height="90px">
+
+                </div>
+                <div class="arrowB">
+                    <button class="buttonArrow">
+                        <span class="arrow"></span>
+                        <span class="arrow"></span>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="menuProjects hidden">
+                <span>
+                    <h1>Proyectos</h1>
+                    <ul>
+                        <li class="pButton"><a>PongProject</a></li>
+                        <li class="wButton"><a>weatherApp</a></li>
+                        <li class="gButton"><a>Gerizim</a></li>
+                        <li class="cButton"><a>chatBot</a></li>
+                    </ul>
+                </span>
+
+            </div>
+        </div>
+
+        <div class="skills ">
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/htmllogo.png" alt="">
+                    </div>
+                    <h3>HTML 5</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle ">
+                    <div class="skillimg">
+                        <img src="img/csslogo.png" alt="">
+                    </div>
+                    <h3>CSS</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/jslogo.png" alt="">
+                    </div>
+                    <h3>Javascript</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/pythonlogo.png" alt="">
+                    </div>
+                    <h3>Python</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/sqlLogo.png" alt="">
+                    </div>
+                    <h3>SQL</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/csharplogo.png" alt="">
+                    </div>
+                    <h3>C#</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/cplusLogo.png" alt="">
+                    </div>
+                    <h3>C++</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/C_Logo.png" alt="">
+                    </div>
+                    <h3>C</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/githubLogo.png" alt="">
+                    </div>
+                    <h3>Github</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/kotlinLogo.png" alt="">
+                    </div>
+                    <h3>Kotlin</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/firebaseLogo.png" alt="">
+                    </div>
+                    <h3>FireBase</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
+                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
+                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+            </div>
+
+        </div>
+
+        <div class="contactForm">
+            <section class="formHeader">Send us a message</section>
+            <form action="#">
+                <div class="formFields">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Ingrese su Nombre">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" id="" placeholder="Ingrese su correo Electronico">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="phone" id="" placeholder="Ingrese su numero de telefono">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="message">
+                        <textarea name="message"  rows="10" placeholder="Escriba su mensaje"></textarea>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="buttondiv">
+                        <button type="submit">Send Message</button>
+                        <span>Sending your message....</span>
+                    </div>
+                    
+                </div>
+            </form>
+
         </div>
     </main>
-    <footer>
-        Contacto
-    </footer>
+    <div class="circles"></div>
+    <div class="circles" id="circ"></div>
+    <div class="circles" id="circ"></div>
+    <div class="circles" id="circ"></div>
+    <div class="circles" id="circ"></div>
+    <div class="circles" id="circ"></div>
+    <div class="circles" id="circ"></div>
+    <div class="circles" id="circ"></div>
+    <div class="circles" id="circ"></div>
+    <div class="circles" id="circ"></div>
     <script src="js.js"></script>
 </body>
 
