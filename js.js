@@ -138,6 +138,7 @@ function animateCircles() {
 
 animateCircles();
 
+/*
 form.onsubmit = (e)=>{
     e.preventDefault();
     statusTxt.style.display = "block";
@@ -160,4 +161,4 @@ form.onsubmit = (e)=>{
     }
     let formData = new FormData(form);
     xhr.send(formData);
-}
+} */
