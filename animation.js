@@ -1,4 +1,4 @@
-
+import * as THREE from 'three';
 const animacion = document.getElementById('animacion');
 var toggle = document.querySelector('.container');
 const SCREEN_WIDTH = window.innerWidth,
