@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    
     <script src="https://kit.fontawesome.com/e2be4c989e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/favIconWhite.png" media="(prefers-color-scheme: light)">
+
+    
     <script type="importmap">
         {
           "imports": {
@@ -27,13 +31,16 @@
             <ul class="links">
 
                 <li class="navLi"><a href="#"></a>Bio</li>
-                <li class="navLi"><a href="#"></a>Skills</li>
                 <li class="navLi"><a href="#"></a>Personal Projects</li>
+                <li class="navLi"><a href="#"></a>Skills</li>
                 <li class="navLi"><a href="#"></a>Contacto</li>
             </ul>
         </nav>
         <div class="container">
-            <div class="toggle"></div>
+            <div class="outerBox">
+                <div class="toggle"><img src="img/sunB.png" alt="sun" height="20px" id="toggleImg"></div>
+            </div>
+            <!-- <div><img src="img/MoonB.png" alt="sun" height="20px"></div> -->
         </div>
 
 
@@ -61,11 +68,8 @@
             <div class="info hidden">
                 <span>
                     <h1 class="About">Bio</h1>
-                    <h2>Hello, this is Enoc Andrade,
-                        a CompSci Student, i have been learning how to code since 2020, on last year of college, i have
-                        a passion for programming
-                        and design,with this i will be giving you a tour through my skills, projects and who i am as i
-                        compsci student. Welcome to my portfolio. </h2>
+                    <h2>Hello, this is Enoc Andrade, a Computer Science student. I have been learning how to code since 2020 and am in my last year of college. I have a passion for programming and design. With this, I will be giving you a tour through my skills, projects, and who I am as a Computer Science student. </h2>
+                    <h1>Welcome to my portfolio.</h1>
                 </span>
 
             </div>
@@ -76,11 +80,9 @@
             <div class="infoProjects hidden">
                 <div class="pongCard">
                     <div class="pong">
-                        <h1>Pong Project</h1>
-                        <p>Pong Project is a project in which is a web based game of the classic game Pong, it works for
-                            1
-                            player against the computer, developed with html css and javascript</p>
-                        <p>Link a github <a href="https://github.com/ENocAndz/PongProject">Pong Project</a></p>
+                        <h1>SocialMedia Clone</h1>
+                        <p>Social Media Clone is a full-stack web application built using React that mimics the functionality of popular social media platforms. The project features a custom API and provides a rich set of features for an engaging user experience.</p>
+                        <p>Link to github <a href="https://github.com/ENocAndz/socialMediaClone">SocialMedia Clone</a></p>
                         <div class="imgs">
                             <img src="img/htmllogo.png" alt="htmllogo" height="90px">
                             <img src="img/csslogo.png" alt="csslogo" height="90px">
@@ -93,44 +95,39 @@
 
                 <div class="weatherCard">
                     <div class="weather">
-                        <h1>Weather</h1>
-                        <p>WeatherApp is an app for checking the weather based on location, its done with html, css,
-                            javascript and with the help of a API for getting the weather information based on the
-                            location
-                            the user inputs.</p>
-                        <p>Link a github <a href="https://github.com/ENocAndz/WeatherApp">WeatherApp</a></p>
+                        <h1>Chess Engine</h1>
+                        <p>Python Chess Engine is a robust and versatile chess application developed using Python. It supports both 1v1 gameplay between two human players and matches against an AI opponent with varying levels of difficulty. This project aims to provide a comprehensive chess experience, whether for casual play or serious practice.</p>
+                        <p>Link to github <a href="https://github.com/ENocAndz/chessEngine">Chess Engine</a></p>
                         <div class="imgs">
-                            <img src="img/htmllogo.png" alt="htmllogo" height="90px">
-                            <img src="img/csslogo.png" alt="csslogo" height="90px">
-                            <img src="img/jslogo.png" alt="jslogo" height="90px">
-                        </div>
-                    </div>
-                    <div class="weatherimg"></div>
-                </div>
+                            <img src="img/pythonlogo.png" alt="htmllogo" height="90px">
+                            
+                            </div>
+                            </div>
+                            <div class="weatherimg"></div>
+                            </div>
 
                 <div class="gerizimCard">
                     <div class="gerizim">
-                        <h1>Gerizim</h1>
-                        <p>Gerizim was an App developed in C# for a Company that manufactures Perfumes and lotions, its
-                            an
-                            app with several modules like inventory, sales,requests for inventory, warehouse, this
-                            projects
-                            was a project for a college course and was done with help of several collaborators tu ensure
-                            the
-                            requests from the client were fulfilled.</p>
-                        <img src="img/csharplogo.png" alt="csharplogo" height="90px">
+                        <h1>FlappyBird AI</h1>
+                        <p>Flappy Bird AI is an innovative project developed using Python that leverages neural networks to train an AI agent to play the popular game Flappy Bird autonomously. The AI improves its performance over multiple training epochs by learning from previous generations, ultimately achieving high scores through evolutionary strategies.</p>
+                        <p>Link to github <a href="https://github.com/ENocAndz/chessEngine">Flappy bird AI </a></p>
+                        <img src="img/pythonlogo.png" alt="htmllogo" height="90px">
+
                     </div>
                     <div class="gerizimimg"></div>
 
                 </div>
+                <div class="skullCard">
+                    <div class="chatbot">
+                        <h1>skull2canldy</h1>
+                        <p>The platform offers a rich set of features, including search function, music player, an in-store for merchandise, and transaction capabilities. Users can enjoy different roles such as standard user and premium user, with premium users gaining access to exclusive content through a subscription model. </p>
+                        <p>Link a github <a href="https://github.com/ham0ncito/SkuulllCanldy">skull2canldy </a></p>
+                        <img src="img/htmllogo.png" alt="htmllogo" height="90px">
+                        <img src="img/csslogo.png" alt="csslogo" height="90px">
+                        <img src="img/jslogo.png" alt="jslogo" height="90px">
 
-                <div class="chatbot">
-                    <h1>Python chatbot</h1>
-                    <p>this Chatbot was made with Python, it can answer to what the user inputs, has a limited amount of
-                        answers based on me, for changing answers its just needed to change the intents file, it uses
-                        python technologies as tflearn and tensorflow. </p>
-                    <p>Link a github <a href="https://github.com/ENocAndz/Chatbot">Python Chatbot</a></p>
-                    <img src="img/pythonlogo.png" alt="pythonlogo" height="90px">
+                    </div>
+                    <div class="skullimg"></div>
 
                 </div>
                 <div class="arrowB">
@@ -144,12 +141,12 @@
             </div>
             <div class="menuProjects hidden">
                 <span>
-                    <h1>Proyectos</h1>
+                    <h1>Projects</h1>
                     <ul>
-                        <li class="pButton"><a>PongProject</a></li>
-                        <li class="wButton"><a>weatherApp</a></li>
-                        <li class="gButton"><a>Gerizim</a></li>
-                        <li class="cButton"><a>chatBot</a></li>
+                        <li class="pButton"><a>SocialMedia Clone</a></li>
+                        <li class="wButton"><a>Chess Engine</a></li>
+                        <li class="gButton"><a>FlappyBird AI</a></li>
+                        <li class="cButton"><a>Skull2canldy</a></li>
                     </ul>
                 </span>
 
@@ -164,9 +161,7 @@
                     </div>
                     <h3>HTML 5</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
             <div class="skillbox hidden ">
                 <div class="skilltitle ">
@@ -175,9 +170,7 @@
                     </div>
                     <h3>CSS</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
             <div class="skillbox hidden ">
                 <div class="skilltitle">
@@ -186,9 +179,7 @@
                     </div>
                     <h3>Javascript</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
             <div class="skillbox hidden ">
                 <div class="skilltitle">
@@ -197,9 +188,7 @@
                     </div>
                     <h3>Python</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
             <div class="skillbox hidden ">
                 <div class="skilltitle">
@@ -208,9 +197,7 @@
                     </div>
                     <h3>SQL</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
             <div class="skillbox hidden">
                 <div class="skilltitle">
@@ -219,9 +206,7 @@
                     </div>
                     <h3>C#</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
             <div class="skillbox hidden ">
                 <div class="skilltitle">
@@ -230,9 +215,7 @@
                     </div>
                     <h3>C++</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
             <div class="skillbox hidden ">
                 <div class="skilltitle">
@@ -241,9 +224,7 @@
                     </div>
                     <h3>C</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
             <div class="skillbox hidden ">
                 <div class="skilltitle">
@@ -252,9 +233,7 @@
                     </div>
                     <h3>Github</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
             <div class="skillbox hidden ">
                 <div class="skilltitle">
@@ -263,9 +242,16 @@
                     </div>
                     <h3>Kotlin</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
+            </div>
+            <div class="skillbox hidden ">
+                <div class="skilltitle">
+                    <div class="skillimg">
+                        <img src="img/reactLogo.png" alt="">
+                    </div>
+                    <h3>React</h3>
+                </div>
+                
             </div>
             <div class="skillbox hidden ">
                 <div class="skilltitle">
@@ -274,16 +260,15 @@
                     </div>
                     <h3>FireBase</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sapiente. Tenetur iusto,
-                    consectetur at placeat quibusdam voluptatibus quasi, molestiae odit corporis cumque accusamus? Magni
-                    perspiciatis cum minus, reiciendis recusandae aliquam.</p>
+                
             </div>
 
         </div>
 
         <div class="contactForm">
-            <section class="formHeader">Send us a message</section>
-            <form action="message.php" method="post">
+            <section class="formHeader">Get in touch</section>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="15e9f179-00fe-449f-9d90-e1d96eb9279c">
                 <div class="formFields">
                     <div class="field">
                         <input type="text" name="name" placeholder="Ingrese su Nombre">
@@ -293,10 +278,7 @@
                         <input type="text" name="email" id="" placeholder="Ingrese su correo Electronico">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <div class="field">
-                        <input type="text" name="phone" id="" placeholder="Ingrese su numero de telefono">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
+                    
                     <div class="message">
                         <textarea name="message"  rows="10" placeholder="Escriba su mensaje"></textarea>
                         <i class="fa-solid fa-message"></i>

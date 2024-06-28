@@ -26,6 +26,13 @@ header{
 .hd.scrolled{
     background-color: #000000;
 }
+.hd.scrolled nav li{
+    color: white;
+}
+
+.hd.scrolled .imagen{
+    filter: invert(100%);
+}
 header .logo{
     cursor: pointer;
     order: 3;
@@ -89,8 +96,8 @@ navLi:hover{
 
 }
 
-.container{
-    margin-left: auto;
+.container .outerBox{
+    margin-left: 30px;
     background-color: #FEFAF6;
     width: 80px;
     height: 40px;
@@ -101,6 +108,7 @@ navLi:hover{
 }
 
 .toggle{
+    padding: 10px;
     width: 40px;
     height: 40px;
     transform: scale(.7);
@@ -108,8 +116,13 @@ navLi:hover{
     border-radius: 25px;
     box-shadow: 3px 3px 8px #c4c4c4,
                 -3px -3px 8px #fff;
-
+    transition: left 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
+.toggle img {
+    transition: opacity 0.3s; 
+}
+
+
 
 .container.active .toggle{
     position:relative;
@@ -382,7 +395,7 @@ body.active .mp .h1{
 .infoProjects p{
     margin-bottom: 20px;
 }
-.pong,.pongimg,.weather,.weatherimg,.gerizim,.gerizimimg,.chatbot,.chatbotimg{
+.pong,.pongimg,.weather,.weatherimg,.gerizim,.gerizimimg,.chatbot,.skullimg{
     width: 100%;
     height: 100%;
     padding: 80px 50px;
@@ -394,28 +407,37 @@ body.active .mp .h1{
     
 }
 .pongimg{
-    background-image: url(img/pongimg.jpeg) ;
-    background-size:cover;
+    background-image: url(img/SMC.jpg) ;
+    background-size:contain;
     background-position:center ;
+    background-repeat: no-repeat; 
     
 }
-.pongimg,.weatherimg,.gerizimimg{
+.pongimg,.weatherimg,.gerizimimg,.skullimg{
     transform: rotateY(180deg);
     position: absolute;
     top: 0;
 }
 
 .weatherimg{
-    background-image: url(img/weatherimg.jpg) ;
-    background-size:cover;
+    background-image: url(img/chessEngine.jpg) ;
+    background-size:contain;
     background-position:center ;
+    background-repeat: no-repeat; 
+}
+.skullimg{
+    background-image: url(img/sc.jpg) ;
+    background-size:contain;
+    background-position:center ;
+    background-repeat: no-repeat; 
 }
 .gerizimimg{
-    background-image: url(img/gerizimGod.png) ;
-    background-size:cover;
-    background-position:center ;
+    background-image: url(img/flappyBird.jpg) ;
+    background-size:contain;
+    background-position:bottom ;
+    background-repeat: no-repeat;
 }
-.gerizimCard,.pongCard,.chatbot,.weatherCard{
+.gerizimCard,.pongCard,.skullCard,.weatherCard{
     display: none;
 }
 .gerizim img,.chatbot img{
@@ -423,7 +445,7 @@ body.active .mp .h1{
     margin-left: 15%;
 }
 
-.pongCard,.weatherCard,.gerizimCard{
+.pongCard,.weatherCard,.gerizimCard, .skullCard{
     height: 100%;
     transition: transform 1500ms;
     transform-style: preserve-3d;

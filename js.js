@@ -17,10 +17,11 @@ var links = document.querySelector('.links');
 var logo = document.querySelector('.imagen');
 var body = document.querySelector('body');
 var enoc = document.querySelector('.enoc');
+var toggleImg = document.getElementById('toggleImg');
 const pCard = document.querySelector('.pongCard');
 const wCard = document.querySelector('.weatherCard');
 const gCard = document.querySelector('.gerizimCard');
-const cCard = document.querySelector('.chatbot');
+const sCard = document.querySelector('.skullCard');
 const arrow = document.querySelector('.buttonArrow');
 const gButton = document.querySelector('.gButton'); 
 const pButton = document.querySelector('.pButton'); 
@@ -38,7 +39,6 @@ const coords = {x :0, y:0};
 var number = 0;
 
 toggle.onclick = function(){
-    
     toggle.classList.toggle('active');
     body.classList.toggle('active');
     links.classList.toggle('active');
@@ -47,6 +47,19 @@ toggle.onclick = function(){
     circles.forEach(circle => {
         circle.classList.toggle('active');
     })
+    if (toggle.classList.contains('active')) {
+        toggleImg.style.opacity = 0; 
+        setTimeout(function() {
+            toggleImg.src = 'img/MoonB.png'; 
+            toggleImg.style.opacity = 1; 
+        }, 300); 
+    } else {
+        toggleImg.style.opacity = 0; 
+        setTimeout(function() {
+            toggleImg.src = 'img/sunB.png';
+            toggleImg.style.opacity = 1; 
+        }, 300); 
+    }
 }
 
 
@@ -69,12 +82,14 @@ arrow.addEventListener('mouseover', ()=>{
     pCard.classList.add('flip');
     gCard.classList.add('flip');
     wCard.classList.add('flip');
+    sCard.classList.add('flip');
 });
 
 arrow.addEventListener('mouseout', () =>{
     pCard.classList.remove('flip');
     gCard.classList.remove('flip');
     wCard.classList.remove('flip');
+    sCard.classList.remove('flip');
 });
 
 // Onclick Projects script
@@ -83,22 +98,22 @@ gButton.onclick =function(){
     gCard.classList.add('visible');
     pCard.classList.remove('visible');
     wCard.classList.remove('visible');
-    cCard.classList.remove('visible');
+    sCard.classList.remove('visible');
 };
 pButton.onclick= function(){
     pCard.classList.add('visible');
     gCard.classList.remove('visible');
     wCard.classList.remove('visible');
-    cCard.classList.remove('visible');
+    sCard.classList.remove('visible');
 };
 wButton.onclick= function(){
     wCard.classList.add('visible');
     pCard.classList.remove('visible');
     gCard.classList.remove('visible');
-    cCard.classList.remove('visible');
+    sCard.classList.remove('visible');
 };
 cButton.onclick = function(){
-    cCard.classList.add('visible');
+    sCard.classList.add('visible');
     pCard.classList.remove('visible');
     wCard.classList.remove('visible');
     gCard.classList.remove('visible');
@@ -138,27 +153,3 @@ function animateCircles() {
 
 animateCircles();
 
-/*
-form.onsubmit = (e)=>{
-    e.preventDefault();
-    statusTxt.style.display = "block";
-    
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST", "message.php",true);
-    xhr.onload = ()=>{
-        if(xhr.readyState == 4 && xhr.status == 200){
-            if(response.indexof("Email and Message field is required!") != -1 || response.indexof("Enter a valid Email") || response.indexof("Failed to send your message")){
-                statusTxt.style.color = "red";
-
-            }else{
-                form.reset();
-                setTimeout(()=>{
-                    statusTxt.style.display = "none";
-                }, 3000)
-            }
-            statusTxt.innerText = response;
-        }
-    }
-    let formData = new FormData(form);
-    xhr.send(formData);
-} */
