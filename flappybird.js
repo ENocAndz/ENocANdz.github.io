@@ -57,7 +57,7 @@ window.onload = function() {
 
     // Add event listener to show canvas with key combination
     document.addEventListener("keydown", (event) => {
-        if (event.shiftKey && event.code === "KeyS") {
+        if (event.shiftKey && event.code === "KeyN") {
             board.style.display = "block"; // Show the canvas
             console.log("Game canvas revealed!");
             if(gameVisible == false ) {
