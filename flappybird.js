@@ -53,7 +53,7 @@ window.onload = function() {
     board.style.left = "50%";
     board.style.transform = "translate(-50%, -50%)";
     board.style.border = "2px solid black";
-    board.style.zIndex = 0;
+    board.style.zIndex = 1000;
 
     // Add event listener to show canvas with key combination
     document.addEventListener("keydown", (event) => {
