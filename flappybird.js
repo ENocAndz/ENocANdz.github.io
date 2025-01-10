@@ -109,7 +109,7 @@ function update(){
         gameWin = true;
         context.fillStyle = "yellow";
         context.font = "45px san-serif";
-        context.fillText("YOU WIN",5,200);
+        context.fillText("YOU WIN",20,200);
         return;
     }
     if(gameOver){
