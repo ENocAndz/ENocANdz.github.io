@@ -105,7 +105,7 @@ function startGame(event) {
 
 function update(){
     requestAnimationFrame(update);
-    if(score == 10){
+    if(score == 100){
         gameWin = true;
         context.fillStyle = "yellow";
         context.font = "45px san-serif";
