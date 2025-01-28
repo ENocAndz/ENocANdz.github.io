@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 const animacion = document.getElementById('animacion');
 var toggle = document.querySelector('.container');
-const SCREEN_WIDTH = window.innerWidth,
+const SCREEN_WIDTH = document.documentElement.clientWidth,
 SCREEN_HEIGHT = window.innerHeight,
 
 r = 450;
