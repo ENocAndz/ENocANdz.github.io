@@ -1,8 +1,33 @@
 {
   "dependencies": {
+    "@barba/core": "^2.10.3",
+    "svgo": "^4.0.0",
+    "swup": "^4.8.2",
     "three": "^0.161.0"
   },
   "devDependencies": {
+    "sass": "^1.89.2",
     "vite": "^5.0.12"
-  }
+  },
+  "name": "enocandz.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "animation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scss": "sass scss:css",
+    "watch:scss": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ENocAndz/ENocANdz.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ENocAndz/ENocANdz.github.io/issues"
+  },
+  "homepage": "https://github.com/ENocAndz/ENocANdz.github.io#readme"
 }

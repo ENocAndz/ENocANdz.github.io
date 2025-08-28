@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Enoc Andrade</title>
+    <title>Portfolio Enoc And.rade</title>
     
     <script src="https://kit.fontawesome.com/e2be4c989e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+    <script src="https://unpkg.com/swup@4"></script>
+
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./img/iconNoBG.png">
 
     
@@ -28,10 +34,11 @@
         <div class="logo">
             <img src="img/logo-no-background.png" alt="Logo" class="imagen">
         </div>
+        <i class="fa-solid fa-bars hamburger"></i>
         <nav>
             <ul class="links">
                 <li class="navLi"><a href="#bio">Bio</a></li>
-                <li class="navLi"><a href="#projects">Personal Projects</a></li>
+                <li class="navLi"><a href="#nProjects">Personal Projects</a></li>
                 <li class="navLi"><a href="#skills">Skills</a></li>
                 <li class="navLi"><a href="#contactForm">Contacto</a></li>
             </ul>
@@ -42,110 +49,119 @@
             </div>
             <!-- <div><img src="img/MoonB.png" alt="sun" height="20px"></div> -->
         </div>
-
-
-
     </header>
-    <main>
+    <main id="swup" class="transition-fade">
+        <!-- <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                var userLang = navigator.language || navigator.userLanguage; // Get user's language
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    autoDisplay: false
+                }, 'google_translate_element');
+                
+                if (userLang !== "en") {
+                    setTimeout(function() {
+                        document.querySelector(".goog-te-combo").value = userLang.substring(0, 2);
+                        document.querySelector(".goog-te-combo").dispatchEvent(new Event("change"));
+                    }, 500);
+                }
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+        
         <div class="mp">
             <div class="enoc">
                 <h1>Hello, this is Enoc Andrade</h1>
             </div>
             <div class="animacion" id="animacion">
-
-
-
-
-                <script type="module" src="animation.js">
-
-                </script>
-
+                <script type="module" src="animation.js"></script>
             </div>
+            <span class="scrollDown">
+                <span class="mouseWheel">
+
+                </span>
+            </span>
+        </div>
+        <div class="svgContainer">
+            <svg width="100%" height="3000" viewBox="0 0 1446 1035" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="neonBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#0011FF" /> <!-- dark neon blue -->
+                    <stop offset="100%" stop-color="#00E5FF" /> <!-- light neon blue -->
+                    </linearGradient>
+                </defs>
+
+                <path 
+                    d="M1 1C20.2 17 177 181 301 205C425 229 385 267 453 323C521 379 561 711 453 799C345 887 75 739 91 573C107 407 181 375 357 397C533 419 565 661 723 655C881 649 1035 827 1185 799C1335 771 1227 845 1299 951C1371 1057 1445 1031 1445 1031" 
+                    stroke="url(#neonBlue)" 
+                    stroke-width="20"
+                    stroke-linecap="round"
+                />
+            </svg>
+
         </div>
         <div class="bio" id="bio">
             <div class="info hidden">
                 <span>
                     <h1 class="About">Bio</h1>
-                    <h2>Hello, this is Enoc Andrade, a Computer Science student. I have been learning how to code since 2020 and i'm in my last year of college. I have a passion for programming and design. With this, I will be giving you a tour through my skills, projects, and who I am as a Computer Science student. </h2>
-                    <h1>Welcome to my portfolio.</h1>
+                    <h2>Hola, soy Enoc Andrade, graduado en Ciencias de la Computación. Me especializo en programación y en base de datos, y a lo largo de mi carrera he desarrollado proyectos que reflejan mi enfoque en la innovación y la eficiencia. En este portafolio encontrarás un recorrido por mis habilidades, proyectos destacados y mi visión como profesional en tecnología.</h2>
+                    <h1>Bienvenido a mi portafolio.</h1>
                 </span>
             </div>
         </div>
-
-        <div class="projects" id="projects">
-            <div class="infoProjects hidden">
-                <div class="pongCard">
-                    <div class="pong">
-                        <h1>SocialMedia Clone</h1>
-                        <p>Social Media Clone is a full-stack web application built using React that mimics the functionality of popular social media platforms. The project features a custom API and provides a rich set of features for an engaging user experience.</p>
-                        <p>Link to github <a href="https://github.com/ENocAndz/socialMediaClone">SocialMedia Clone</a></p>
-                        <div class="imgs">
-                            <img src="img/htmllogo.png" alt="htmllogo" height="90px">
-                            <img src="img/csslogo.png" alt="csslogo" height="90px">
-                            <img src="img/jslogo.png" alt="jslogo" height="90px">
-                        </div>
-
+        <div class="nProjects" id="nProjects">
+            <h1 class="title reveal">Featured Work</h1>
+            <div class="pRow">
+                
+                <div class="pCard" id="appControlCard">
+                    <div class="pCardImg hidden">
+                        <a href="/controlPrioridades.html" class="pCardLink">
+                            <img src="img/AppCtrl.png" alt="SS App Control Prioridades" class="card-image">
+                        </a>
                     </div>
-                    <div class="pongimg"></div>
-                </div>
-
-                <div class="weatherCard">
-                    <div class="weather">
-                        <h1>Chess Engine</h1>
-                        <p>Python Chess Engine is a robust and versatile chess application developed using Python. It supports both 1v1 gameplay between two human players and matches against an AI opponent with varying levels of difficulty. This project aims to provide a comprehensive chess experience, whether for casual play or serious practice.</p>
-                        <p>Link to github <a href="https://github.com/ENocAndz/chessEngine">Chess Engine</a></p>
-                        <div class="imgs">
-                            <img src="img/pythonlogo.png" alt="htmllogo" height="90px">
-                            
-                            </div>
-                            </div>
-                            <div class="weatherimg"></div>
-                            </div>
-
-                <div class="gerizimCard">
-                    <div class="gerizim">
-                        <h1>FlappyBird AI</h1>
-                        <p>Flappy Bird AI is an innovative project developed using Python that leverages neural networks to train an AI agent to play the popular game Flappy Bird autonomously. The AI improves its performance over multiple training epochs by learning from previous generations, ultimately achieving high scores through evolutionary strategies.</p>
-                        <p>Link to github <a href="https://github.com/ENocAndz/chessEngine">Flappy bird AI </a></p>
-                        <img src="img/pythonlogo.png" alt="htmllogo" height="90px">
-
+                    <div class="pCardtext">
+                        <p class="decode-text">C# • DEVEXPRESS • SQL SERVER</p>
+                        <div class="movementText"><i class="fa-solid fa-arrow-right arrowIcon"></i> <h1>App Control Prioridades</h1> </div>
                     </div>
-                    <div class="gerizimimg"></div>
-
                 </div>
-                <div class="skullCard">
-                    <div class="chatbot">
-                        <h1>skull2canldy</h1>
-                        <p>The platform offers a rich set of features, including search function, music player, an in-store for merchandise, and transaction capabilities. Users can enjoy different roles such as standard user and premium user, with premium users gaining access to exclusive content through a subscription model. </p>
-                        <p>Link a github <a href="https://github.com/ham0ncito/SkuulllCanldy">skull2canldy </a></p>
-                        <img src="img/htmllogo.png" alt="htmllogo" height="90px">
-                        <img src="img/csslogo.png" alt="csslogo" height="90px">
-                        <img src="img/jslogo.png" alt="jslogo" height="90px">
-
+                <div class="pCard">
+                    <div class="pCardImg hidden">
+                        <a href="/socialMediaClone.html" class="pCardLink">
+                            <img src="img/SMC.jpg" alt="SocialMedia Clone" class="card-image ">
+                        </a>
                     </div>
-                    <div class="skullimg"></div>
-
-                </div>
-                <div class="arrowB">
-                    <button class="buttonArrow">
-                        <span class="arrow"></span>
-                        <span class="arrow"></span>
-                    </button>
-
+                    <div class="pCardtext">
+                        <p class="decode-text">WEB • REACT • MySQL</p>
+                        <div class="movementText"><i class="fa-solid fa-arrow-right arrowIcon"></i> <h1>Social Media Clone</h1> </div>
+                    </div>
                 </div>
 
             </div>
-            <div class="menuProjects hidden">
-                <span>
-                    <h1>Projects</h1>
-                    <ul>
-                        <li class="pButton"><a>SocialMedia Clone</a></li>
-                        <li class="wButton"><a>Chess Engine</a></li>
-                        <li class="gButton"><a>FlappyBird AI</a></li>
-                        <li class="cButton"><a>Skull2canldy</a></li>
-                    </ul>
-                </span>
-
+            <div class="pRow">
+                <div class="pCard" id="chessCard">
+                    <div class="pCardImg hidden">
+                        <a href="/chessEngine.html" class="pCardLink">
+                            <img src="img/chessEngine.jpg" alt="chess engine app" class="card-image ">
+                        </a>
+                    </div>
+                    <div class="pCardtext">
+                        <p class="decode-text">TENSORFLOW • PYTHON</p>
+                        <div class="movementText"><i class="fa-solid fa-arrow-right arrowIcon"></i> <h1>Chess Engine</h1> </div>
+                    </div>
+                </div>      
+                <div class="pCard">
+                    <div class="pCardImg hidden">
+                        <a href="/streamingApp.html" class="pCardLink">
+                            <img src="img/sc.jpg" alt="streaming app" class="card-image ">
+                        </a>
+                    </div>
+                    <div class="pCardtext">
+                        <p class="decode-text">JS • CSS • FIREBASE • MySQL</p>
+                        <div class="movementText"><i class="fa-solid fa-arrow-right arrowIcon"></i> <h1>Streaming App</h1> </div>
+                    </div>
+                </div>  
             </div>
         </div>
 
@@ -289,6 +305,12 @@
 
         </div>
     </main>
+    <div id="screenModal" class="modal">
+        <div class="modal-content">
+        <p>Para una mejor experiencia, utiliza un dispositivo con una pantalla más grande.</p>
+        <button id="modalClose">OK</button>
+    </div>
+    </div>
     <div class="circles"></div>
     <div class="circles" id="circ"></div>
     <div class="circles" id="circ"></div>
@@ -299,13 +321,18 @@
     <div class="circles" id="circ"></div>
     <div class="circles" id="circ"></div>
     <div class="circles" id="circ"></div>
-    <script src="js.js"></script>
-
+    
     <div class="game">
         <canvas id="board">
             
         </canvas>
     </div>
+    <script src="js.js"></script>
+    <!-- <script defer src="/swup.js"></script> -->
+     <!-- <script>const swup = new Swup({
+  containers: ['#swup']
+});</script> -->
+
 
 </body>
 

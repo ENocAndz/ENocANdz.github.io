@@ -1,0 +1,114 @@
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100;
+  width: 100%;
+  height: 85px;
+  padding: 5px 10px;
+}
+header .logo {
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+  margin-right: 30px;
+}
+header .logo img {
+  height: 60px;
+  width: auto;
+  transition: all 0.3s;
+}
+header .logo .imagen:hover {
+  transform: scale(1.2);
+}
+header .logo .imagen.active {
+  filter: invert(100%);
+}
+header nav {
+  display: contents;
+  width: 100%;
+  height: 100%;
+}
+header nav:hover {
+  background-color: #000;
+  color: white;
+}
+header nav .links {
+  list-style: none;
+}
+header nav .links.active li a {
+  color: white;
+}
+header nav .links.active li:hover {
+  color: #000;
+  background-color: white;
+}
+header nav .links.active li:hover a {
+  color: #000;
+}
+header nav .links li {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+header nav .links li:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: #FEFAF6;
+}
+header nav .links li:hover a {
+  color: white;
+}
+header nav .links li a {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 700;
+  color: #000;
+  text-decoration: none;
+}
+header nav .links li a:nth-child(1) {
+  margin: 0;
+}
+header .container {
+  order: 3;
+}
+header .container .outerBox {
+  margin-left: 30px;
+  background-color: #FEFAF6;
+  width: 80px;
+  height: 40px;
+  box-shadow: inset 4px 4px 6px #cecece, inset -4px -4px 6px #fff;
+  border-radius: 25px;
+  cursor: pointer;
+}
+header .container .outerBox .toggle {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  transform: scale(0.7);
+  background-color: linear-gradient(145deg, #d8d8d8, #fff);
+  border-radius: 25px;
+  box-shadow: 3px 3px 8px #c4c4c4, -3px -3px 8px #fff;
+  transition: left 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+header .container .outerBox .toggle img {
+  transition: opacity 0.3s;
+}
+header .container.active .toggle {
+  position: relative;
+  left: 40px;
+}
+header.hd.scrolled {
+  background-color: #000000;
+}
+header.hd.scrolled nav li a {
+  color: white;
+}
+header.hd.scrolled .imagen {
+  filter: invert(100%);
+}/*# sourceMappingURL=header.css.map */
