@@ -52,12 +52,15 @@ main{
         }
 
         .scrollDown{
+            position: absolute;
+            bottom: 2rem;
+            left: 50vw;
             width: 25px;
             height: 50px;
             border: 2px solid #000;
             border-radius: 20px;
             display: flex;
-            margin: auto;
+            margin: 0 auto;
 
             .mouseWheel{
                 display: block;
@@ -746,17 +749,23 @@ html.is-animating .transition-fade {
         font-size: 1.5rem;
         text-align: center;
     }
-    main .mp .enoc{
-        padding-top: 10rem;
-        padding-left: 1rem;
-        width: 100vw;
-
-        h1{
-            width: 100%;
-            font-size: 3rem;
+    main .mp{
+        .enoc{
+            padding-top: 10rem;
+            padding-left: 1rem;
+            width: 100vw;
+    
+            h1{
+                width: 100%;
+                font-size: 3rem;
+            }
+    
         }
-
-    }
+        .scrollDown{
+            position: inherit;
+            margin-top: 3rem;
+        }
+    } 
 
     main .bio{
         padding: 0;

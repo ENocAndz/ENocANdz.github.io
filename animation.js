@@ -56,7 +56,13 @@ renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
 renderer.setClearColor( 0x000000, 0 );
 animacion.appendChild( renderer.domElement );
 
-document.body.style.touchAction = 'none';
+window.addEventListener('touchmove', (e) => {
+  if (e.touches.length === 1) {
+    const touch = e.touches[0];
+    mouseX = touch.clientX - windowHalfX;
+    mouseY = touch.clientY - windowHalfY;
+  }
+}, { passive: true });
 document.body.addEventListener( 'pointermove', onPointerMove );
 
 //

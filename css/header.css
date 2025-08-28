@@ -114,5 +114,8 @@ header.hd.scrolled nav li a {
 header.hd.scrolled .imagen {
   filter: invert(100%);
 }
+header .hamburger {
+  display: none;
+}
 
 /*# sourceMappingURL=header.css.map */

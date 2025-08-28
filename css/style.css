@@ -116,6 +116,9 @@ header.hd.scrolled nav li a {
 header.hd.scrolled .imagen {
   filter: invert(100%);
 }
+header .hamburger {
+  display: none;
+}
 
 html {
   scroll-behavior: smooth;
@@ -164,12 +167,15 @@ main .mp .enoc.active h1 {
   color: white;
 }
 main .mp .scrollDown {
+  position: absolute;
+  bottom: 2rem;
+  left: 50vw;
   width: 25px;
   height: 50px;
   border: 2px solid #000;
   border-radius: 20px;
   display: flex;
-  margin: auto;
+  margin: 0 auto;
 }
 main .mp .scrollDown .mouseWheel {
   display: block;
@@ -836,6 +842,10 @@ html.is-animating .transition-fade {
   main .mp .enoc h1 {
     width: 100%;
     font-size: 3rem;
+  }
+  main .mp .scrollDown {
+    position: inherit;
+    margin-top: 3rem;
   }
   main .bio {
     padding: 0;
