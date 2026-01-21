@@ -17,7 +17,6 @@ function createHorizontalScroll() {
             horizontalScroll.scrollTrigger.kill();
             horizontalScroll.kill();
         }
-      console.log(window.innerWidth)
       // Recalculate total width
       totalWidth = 0;
       contents.forEach(item => totalWidth += item.offsetWidth);
@@ -203,7 +202,6 @@ function revealAnimation() {
         });
     } else {
         // Vertical scroll animation for small devices
-        console.log("vertical scroll animation");
         splitTypes.forEach((char) => {
             const bg = char.dataset.bgColor;
             const fg = char.dataset.fgColor;

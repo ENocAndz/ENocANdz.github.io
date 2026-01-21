@@ -196,7 +196,6 @@ circles.forEach(function (circle) {
 window.addEventListener("mousemove",function(e){
     coords.x = e.clientX;
     coords.y = e.clientY;
-    console.log(coords.x,coords.y);
 });
 
 function animateCircles() {
@@ -300,7 +299,7 @@ let svg = document.querySelector('svg');
 let path = svg.querySelector('path');
 const pathLength = path.getTotalLength();
 
-console.log(pathLength);
+
 
 gsap.set(path, {
     strokeDasharray: pathLength
@@ -329,7 +328,6 @@ function showSmallScreenModal() {
 
     // Close button
     document.getElementById('modalClose').addEventListener('click', () => {
-      console.log("clock ok")
       modal.classList.remove('show');
       localStorage.setItem('dismissedSmallScreenModal', 'true');
       setTimeout(() => modal.style.display = 'none', 500); // wait for fade-out
@@ -343,14 +341,5 @@ window.addEventListener('load', showSmallScreenModal);
 // Optional: also handle resize to show modal if they rotate device
 window.addEventListener('resize', showSmallScreenModal);
 
-// const lenis = new Lenis()
-// lenis.on('scroll', (e) => {
-//     console.log(e)
-// })
 
-// function raf(time){
-//     lenis.raf(time)
-//     requestAnimationFrame(raf)
-// }
-// requestAnimationFrame(raf)
 

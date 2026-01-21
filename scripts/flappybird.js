@@ -59,7 +59,6 @@ window.onload = function() {
     document.addEventListener("keydown", (event) => {
         if (event.shiftKey && event.code === "KeyN") {
             board.style.display = "block"; // Show the canvas
-            console.log("Game canvas revealed!");
             if(gameVisible == false ) {
                 gameVisible = true;
             } else {
